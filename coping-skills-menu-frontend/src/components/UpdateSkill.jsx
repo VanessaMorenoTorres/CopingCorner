@@ -25,9 +25,11 @@ class UpdateSkill extends Component {
      {
         SkillService.getSkillById(this.state.id).then((res) =>{
           let skill = res.data;
-          this.setState({strategy:skill.strategy,
-                  reps:skill.reps
-                });
+          this.setState({
+            place: skill.place,  
+            strategy:skill.strategy,
+            reps:skill.reps
+            });
         });    
      }
      
@@ -80,11 +82,11 @@ class UpdateSkill extends Component {
                           <h3 className="text-center">Update Skill</h3>
                           <div className="card-body">
                               <form>  
-                                  <div className="form-group">
+                                  {/* <div className="form-group">
                                       <label>Skill ID: </label>
                                       <input placeholder={this.state.id} readOnly="true" name="id" className="form-control"
                                          value={this.state.id} onChange={this.idHandler} />
-                                   </div>   
+                                   </div>    */}
                                    <div className="form-group">
                                       <label>Skill Place: </label>
                                       <input placeholder="Place" name="place" className="form-control"
