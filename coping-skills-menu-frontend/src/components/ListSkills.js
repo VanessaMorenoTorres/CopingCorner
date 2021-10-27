@@ -63,7 +63,7 @@ class ListSkills extends Component {
                     <table className="table table-striped table-bordered">
                         <thead>
                             <tr>
-                                <th>Skill Id</th>
+                                {/* <th>Skill Id</th> */}
                                 <th>Place</th>
                                 <th>Strategy</th>
                                 <th>Reps</th>
@@ -75,14 +75,14 @@ class ListSkills extends Component {
                                 this.state.skills.map(
                                      skill =>
                                      <tr key={skill.id}>
-                                         <td>{skill.id}</td>
+                                         {/* <td>{skill.id}</td> */}
                                          <td>{skill.place}</td>
                                          <td>{skill.strategy}</td>
                                          <td>{skill.reps}</td>
                                          <td>
                                             <button onClick={() =>this.editSkill(skill.id)} className="btn btn-primary">Update</button> 
                                             <button onClick={() =>this.deleteSkill(skill.id)} className="btn btn-danger">Delete</button> 
-                                            <button onClick={() =>this.viewSkill(skill.id)} className="btn btn-primary">View</button> 
+                                            {/* <button onClick={() =>this.viewSkill(skill.id)} className="btn btn-primary">View</button>  */}
                                          </td>
                                      </tr>
                                 )

@@ -5,9 +5,9 @@ class Header extends Component {
         return (
             <div>
                 <header>
-                    <nav className="navbar">
-                        <div><b>Coping Skills Menu Application</b></div>
-                    </nav>
+                    <div className="header">
+                        <div><b>Coping Corner</b></div>
+                    </div>
                 </header>
             </div>
         );
