@@ -20,8 +20,10 @@ class DeleteSkill extends Component {
      {
         SkillService.getSkillById(this.state.id).then((res) =>{
           let skill = res.data;
-          this.setState({strategy:skill.strategy,
-                  reps:skill.reps
+          this.setState({
+                place: skill.place,  
+                strategy:skill.strategy,
+                reps:skill.reps
                 });
         });  
      }

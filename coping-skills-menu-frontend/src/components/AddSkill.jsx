@@ -6,13 +6,13 @@ class AddSkill extends Component {
     {
         super(props)
         this.state={
-           id: '',
+        //    id: '',
            place: '',
            strategy:'',
            reps:''
         }
       
-        this.idHandler = this.idHandler.bind(this);
+        // this.idHandler = this.idHandler.bind(this);
         this.placeHandler = this.placeHandler.bind(this);
         this.strategyHandler = this.strategyHandler.bind(this);
         this.repsHandler = this.repsHandler.bind(this);
@@ -20,10 +20,10 @@ class AddSkill extends Component {
     }//constructor
 
      
-    idHandler=(event) => {
-        this.setState({
-             id: event.target.value});
-    }
+    // idHandler=(event) => {
+    //     this.setState({
+    //          id: event.target.value});
+    // }
 
     placeHandler=(event) => {
         this.setState({
@@ -43,7 +43,7 @@ class AddSkill extends Component {
     saveSkill = (e) => {
         e.preventDefault();
         let skill={
-           id: this.state.id,
+        //    id: this.state.id,
            place: this.state.place,
            strategy: this.state.strategy,
            reps: this.state.reps
@@ -69,11 +69,6 @@ class AddSkill extends Component {
                           <h3 className="text-center">Add Skill</h3>
                           <div className="card-body">
                               <form>  
-                                  <div className="form-group">
-                                      <label> Skill ID: </label>
-                                      <input placeholder="Id" name="id" className="form-control"
-                                         value={this.state.id} onChange={this.idHandler} />
-                                   </div>
                                    <div className="form-group">
                                       <label>Skill Place: </label>
                                       <input placeholder="Place" name="place" className="form-control"
@@ -102,3 +97,9 @@ class AddSkill extends Component {
 }
 
 export default AddSkill;
+
+//   <div className="form-group"> //this was removed becuase user does not choose id
+      //       <label> Skill ID: </label>
+      //       <input placeholder="Id" name="id" className="form-control"
+     //          value={this.state.id} onChange={this.idHandler} />                                
+     //    </div>

@@ -82,7 +82,7 @@ class ListSkills extends Component {
                                          <td>
                                             <button onClick={() =>this.editSkill(skill.id)} className="btn btn-primary">Update</button> 
                                             <button onClick={() =>this.deleteSkill(skill.id)} className="btn btn-danger">Delete</button> 
-                                            {/* <button onClick={() =>this.viewSkill(skill.id)} className="btn btn-primary">View</button>  */}
+                                            <button onClick={() =>this.viewSkill(skill.id)} className="btn btn-primary">View</button> 
                                          </td>
                                      </tr>
                                 )

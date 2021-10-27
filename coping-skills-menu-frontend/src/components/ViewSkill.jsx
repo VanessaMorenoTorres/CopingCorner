@@ -13,7 +13,6 @@ class ViewSkill extends Component {
              }
      
         
-        
     }//constructor
 
      componentDidMount()
@@ -23,6 +22,9 @@ class ViewSkill extends Component {
          });
      }
      
+     cancel(){
+        this.props.history.push('/skills');
+    }
     
     render() {
         return (
@@ -33,10 +35,10 @@ class ViewSkill extends Component {
                           <h3 className="text-center">View Skill Details</h3>
                           <div className="card-body">
                               <form>  
-                                  <div className="form-group">
+                                  {/* <div className="form-group">
                                     <label>Skill ID: </label>
                                     <input placeholder={this.state.skill.id} readOnly={true} name="id" className="form-control" />
-                                   </div>
+                                   </div> */}
                                    <div className="form-group">
                                       <label>Skill Place: </label>
                                       <input placeholder={this.state.skill.place} readOnly={true} name="place" className="form-control" />
@@ -49,7 +51,7 @@ class ViewSkill extends Component {
                                       <label>Repeat: </label>
                                       <input placeholder={this.state.skill.reps} readOnly={true} name="reps" className="form-control" />
                                    </div> 
-                                                                     
+                                   <button className="btn btn-danger" onClick={this.cancel.bind(this)}> Return to Full List </button>                                     
                               </form>
                           </div>
                       </div>
