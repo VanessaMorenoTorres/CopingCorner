@@ -1,6 +1,7 @@
 import React from "react";
 import axios from "axios";
 import { useState} from 'react';
+import "./cStyles/home.css";
 
 function Home(){
     const [quote, setQuote] = useState('')
@@ -17,7 +18,7 @@ function Home(){
 
 
     return(
-        <div>
+        <div className="homepage">
             <h2>Home Page</h2>
             <p>Welcome to our coping corner. The pupose of this app is to help individuals of all ages practice coping skills preventatively.</p>
             <div>
