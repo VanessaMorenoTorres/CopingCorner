@@ -34,11 +34,7 @@ class ViewSkill extends Component {
                       <div className="card col-md-6 offset-md-3 offset-md-3">
                           <h3 className="text-center">View Skill Details</h3>
                           <div className="card-body">
-                              <form>  
-                                  {/* <div className="form-group">
-                                    <label>Skill ID: </label>
-                                    <input placeholder={this.state.skill.id} readOnly={true} name="id" className="form-control" />
-                                   </div> */}
+                              <form>
                                    <div className="form-group">
                                       <label>Skill Place: </label>
                                       <input placeholder={this.state.skill.place} readOnly={true} name="place" className="form-control" />

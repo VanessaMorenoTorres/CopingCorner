@@ -1,0 +1,23 @@
+.Contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: rgba(255, 255, 255, 0.418); */
+  background-color: rgba(255, 255, 255, 0.418);
+  max-width: fit-content;
+  padding: 10px;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  border-radius: 5px;
+}
+.contactCont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#formSub {
+  background-color: rgb(245, 178, 219);
+  border-radius: 5px;
+}

@@ -1,0 +1,21 @@
+ul{
+    list-style: none;
+
+}
+Link{
+    color: black;
+}
+.pageLinks{
+    background-color: rgba(245, 178, 219, 0.548);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+}
+/* .navBar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+} */

@@ -1,17 +1,12 @@
-import React, { Component } from 'react';
+import React from "react";
+import "./cStyles/header.css";
 
-class Header extends Component {
-    render() {
-        return (
-            <div>
-                <header>
-                    <div className="header">
-                        <div><b>Coping Corner</b></div>
-                    </div>
-                </header>
-            </div>
-        );
-    }
+function Header() {
+  return (
+    <header className="header">
+      <div className="title">Coping Cactus</div>
+    </header>
+  );
 }
 
 export default Header;

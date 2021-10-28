@@ -5,9 +5,9 @@ import DeleteSkill from './DeleteSkill';
 import ViewSkill from './ViewSkill';
 import Home from './Home';
 import Contact from "./ContactUs";
-
 import React from "react";
 import { BrowserRouter as Router, Route, Link, Switch } from "react-router-dom";
+import './cStyles/navBar.css'
 
 // import SkillsMenu from "./skillsMenu";
 
