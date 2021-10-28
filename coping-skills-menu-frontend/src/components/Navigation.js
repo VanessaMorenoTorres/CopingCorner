@@ -21,7 +21,7 @@ function Navigation() {
                   <Link to="/">Home</Link>
                 </li>
                 <li>
-                    <Link to="/skills">Create Coping Skills Menu</Link>
+                    <Link to="/skills">Create Strategy List</Link>
                 </li>
                 <li>
                   <Link to="/contact">Contact Us</Link>

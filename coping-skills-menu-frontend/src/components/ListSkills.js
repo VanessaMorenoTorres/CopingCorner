@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import SkillService from '../services/SkillService';
+import './cStyles/listSkills.css'
 
 class ListSkills extends Component {
       constructor(props)
@@ -52,15 +53,13 @@ class ListSkills extends Component {
     render() {
         return (
             <div>
-                <h2 className="text-center">Skills List</h2>
-                <div> 
-                    <button className="btn btn-primary" onClick={this.addSkill}> Add Skill</button>
-                </div>
+                <h2 className="text-center">Create Your List of Strategies Here:</h2>
                 <div>
-                    <p></p>
+                    <p>Hello</p>
+                    <button className="btn btn-primary" id="btn-add" onClick={this.addSkill}> Add Skill</button>
                 </div>
                 <div className="row">
-                    <table className="table table-striped table-bordered">
+                    <table className="table table-striped table-bordered" id="tbl">
                         <thead>
                             <tr>
                                 {/* <th>Skill Id</th> */}
@@ -80,9 +79,9 @@ class ListSkills extends Component {
                                          <td>{skill.strategy}</td>
                                          <td>{skill.reps}</td>
                                          <td>
-                                            <button onClick={() =>this.editSkill(skill.id)} className="btn btn-primary">Update</button> 
-                                            <button onClick={() =>this.deleteSkill(skill.id)} className="btn btn-danger">Delete</button> 
-                                            <button onClick={() =>this.viewSkill(skill.id)} className="btn btn-primary">View</button> 
+                                            <button onClick={() =>this.editSkill(skill.id)} className="btn btn-primary" id="btn-update">Update</button> 
+                                            <button onClick={() =>this.deleteSkill(skill.id)} className="btn btn-danger" id="btn-delete">Delete</button> 
+                                            <button onClick={() =>this.viewSkill(skill.id)} className="btn btn-primary" id="btn-view">View</button> 
                                          </td>
                                      </tr>
                                 )

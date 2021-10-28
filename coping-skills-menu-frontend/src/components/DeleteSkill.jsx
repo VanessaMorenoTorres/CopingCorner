@@ -57,11 +57,11 @@ class DeleteSkill extends Component {
                           <h3 className="text-center">Delete Skill</h3>
                           <div className="card-body">
                               <form>  
-                                  <div className="form-group">
+                                  {/* <div className="form-group">
                                       <label>Skill ID: </label>
                                       <input placeholder="Id" readOnly="true" name="id" className="form-control"
                                          value={this.state.id} onChange={this.idHandler} />
-                                   </div>  
+                                   </div>   */}
                                    <div className="form-group">
                                       <label>Place: </label>
                                       <input placeholder="Place" readOnly= "true" name="place" className="form-control"
