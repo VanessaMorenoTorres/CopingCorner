@@ -14,9 +14,9 @@ class Footer extends Component {
                 <Ig className="icons" />
                 <Twitter className="icons" />
             </div> */}
-            <p>Follow us on Social Media @CopingCactus </p>
+            <p>Follow us on Social Media @CopingCorner </p>
         </div>
-        <span className="copyr">© CopingCactus by Vanessa Moreno Torres</span>
+        <span className="copyr">© CopingCorner by Vanessa Moreno Torres</span>
       </div>
     );
   }

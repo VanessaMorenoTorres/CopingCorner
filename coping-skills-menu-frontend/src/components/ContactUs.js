@@ -27,7 +27,7 @@ function Contact() {
             required
           />
           <br />
-          <button id="formSub" type="submit" value="Send Message">
+          <button className="btn btn-primary" id="formSub" type="submit" value="Send Message">
             Send Message
           </button>
         </form>
