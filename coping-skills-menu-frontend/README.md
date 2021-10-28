@@ -1,4 +1,4 @@
-# OffTheShelf
+# CopingCorner
 An app to help individuals practive coping skills preventatively to build healthy habits, reduce stress, and improve overall quality of life. 
 
 ## Launch App Here:
